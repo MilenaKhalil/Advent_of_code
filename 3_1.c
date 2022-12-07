@@ -20,9 +20,6 @@ int main()
             else
                 letters[line[j] - 'a'] = line[j];
         }
-        /*for (int i = 0; i < 52; i++)
-            printf("%d ", letters[i]);
-        printf("\n");*/
         while(k < strlen(line) / 2)
         {
             if ((substr[k] <= 'Z' && substr[k] >= 'A' && letters[substr[k] - 'A' + 26] != 0) 
@@ -30,7 +27,6 @@ int main()
                 break;
             k++;
         }
-        //printf("k = %d\n", k);
         if (substr[k] >= 'A' && substr[k] <= 'Z')
             amount += 1 + substr[k] - 'A' + 26;
         else
